@@ -5,7 +5,7 @@ node '0117e8c64c1c.mylabserver.com' {
   include role::master_server
   file { '/root/README':
     ensure => file,
-    content => "Welcome to ${fqdn\n}",
+    content => "Welcome to ${fqdn}\n",
   }
 }
 
