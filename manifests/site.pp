@@ -9,6 +9,10 @@ node '0117e8c64c1c.mylabserver.com' {
   }
 }
 
+node 'minetest.puppet.vm' {
+  include role::minecraft_server
+}
+
 node /^web/ {
   include role::app_server
 }
